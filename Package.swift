@@ -18,15 +18,11 @@ let package = Package(
             targets: ["SVGKitSwift"]
         )
     ],
-    dependencies: [
-        .package(url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", from: "3.7.4")
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "SVGKit",
-            dependencies: [
-                "CocoaLumberjack"
-            ],
+            dependencies: [],
             path: "Source",
             exclude: [
                 "SwiftUI additions"
